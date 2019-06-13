@@ -1,0 +1,656 @@
+* {
+  box-sizing: border-box;
+  font-family: Quicksand;
+
+}
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.center-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+}
+
+
+header .tools li {
+  float: right;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+header .tools a {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 26px 26px;
+  font-size: 0;
+}
+
+.search {
+  background-image: url(../img/icons/lupa.svg);
+}
+
+.fb {
+  background-image: url(../img/icons/fb.svg);
+}
+
+.ig {
+  background-image: url(../img/icons/ig.svg);
+}
+
+.hero {
+  height: 100vh;
+  background: url(../img/banners/deadlift.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.hero .center-wrapper {
+  max-width: 700px;
+  position: relative;
+  top: 50%;
+}
+
+.hero .heading {
+  margin-bottom: 40px;
+  color: white;
+  font-family: Quicksand;
+}
+
+.diet {
+  height: 100vh;
+  background: url(../img/banners/dieta.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.diet .center-wrapper {
+  max-width: 700px;
+  position: relative;
+  top: 50%;
+}
+
+.contact .heading {
+  /* margin-bottom: 40px; */
+  /* color: white; */
+  /* font-family: Quicksand; */
+  margin: 5%;
+  /* font-size: 25px; */
+}
+
+
+.contact {
+  height: 83vh;
+  background: url(../img/banners/lina.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  /* margin-top: -20px; */
+}
+
+.contact .center-wrapper {
+  max-width: 700px;
+  position: relative;
+  top: 50%;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 100px;
+}
+
+.features-wrapper .feature-item {
+  width: 30%;
+  text-align: center;
+}
+
+.features-wrapper .feature-item .image {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.features-wrapper .feature-item .image svg {
+  width: 100px;
+  margin: -50px 0;
+}
+
+.features-wrapper .feature-item .image path {
+  color: #2aada9;
+}
+
+.features-wrapper .feature-item .title {
+  color: #2aada9;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Quicksand';
+}
+
+.tytul {
+  font-family: 'Quicksand';
+  color: #2aada9;
+  text-transform: uppercase;
+  font-size: 55px;
+  text-align: center;
+}
+
+.features-wrapper .feature-item .description {
+  margin: 0 0 25px;
+  line-height: 1.9rem;
+  font-family: 'Quicksand';
+}
+
+.p1,
+.p2 {
+  color: black;
+  text-align: center;
+  font-family: 'Quicksand';
+}
+
+.p2 {
+  font-size: 25px;
+}
+
+
+article {
+  position: relative;
+  text-align: center;
+}
+
+
+/* BUTTONY */
+
+.btn {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid #2aada9;
+  cursor: pointer;
+  color: black;
+  font-family: 'Quicksand';
+}
+
+.btn .btn-wiecej {
+  border-color: #2aada9;
+}
+
+.btn-cube-hover .btn {
+  display: block;
+}
+
+.btn-cube-hover {
+  display: inline-block;
+  height: 44px;
+  transition: all 300ms ease;
+  transform-style: preserve-3d;
+}
+
+.btn-cube-hover:hover {
+  transform: rotateX(89deg);
+}
+
+.btn-cube-hover .default {
+  transform: translateZ(21px);
+}
+
+.btn-cube-hover .hover {
+  transform: rotateX(-90deg) translateZ(-21px);
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 10px;
+  width: 300px;
+  height: 350px;
+  margin-top: 10px;
+  margin-right: 22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.future-item {
+  top: 50%;
+  margin: 0 auto;
+}
+
+
+/* COLUMNS */
+
+
+/* Create three equal columns that floats next to each other */
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  /* height: 300px; */
+  /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.center-wrapper {
+  width: 100%;
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+}
+
+a {
+  font-family: 'Quicksand';
+}
+
+.logo {
+  border: 2px solid black;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  letter-spacing: 0.8mm;
+  float: left;
+  margin: 10px 20px;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  padding: 20px 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .1);
+}
+
+.main-nav {
+  display: block;
+  margin: 20px auto;
+
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 50px;
+  list-style-type: none;
+}
+
+.main-menu li a {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2aada9;
+}
+
+
+/* CENNIK */
+
+#pricing-table {
+  margin: 100px auto;
+  text-align: center;
+  /* width: 892px; */
+  /* total computed width = 222 x 3 + 226 */
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#pricing-table .plan {
+  font: 9px 'Quicksand';
+  text-shadow: 0 1px rgba(255, 255, 255, .8);
+  background: #fff;
+  border: 1px solid #2aada9;
+  color: black;
+  padding: 20px;
+  width: 180px;
+  /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
+  float: left;
+  position: relative;
+}
+
+#pricing-table #most-popular {
+  z-index: 2;
+  top: -13px;
+  border-width: 3px;
+  padding: 30px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+  box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+}
+
+#pricing-table .plan:nth-child(1) {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+
+#pricing-table .plan:nth-child(4) {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+
+
+/* --------------- */
+
+#pricing-table h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  margin: -20px -20px 50px -20px;
+  background-color: #eee;
+  background-image: -moz-linear-gradient(#fff, #eee);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background-image: -webkit-linear-gradient(#fff, #eee);
+  background-image: -o-linear-gradient(#fff, #eee);
+  background-image: -ms-linear-gradient(#fff, #eee);
+  background-image: linear-gradient(#fff, #eee);
+}
+
+#pricing-table #most-popular h3 {
+  background-color: #ddd;
+  background-image: -moz-linear-gradient(#eee, #ddd);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+  background-image: -webkit-linear-gradient(#eee, #ddd);
+  background-image: -o-linear-gradient(#eee, #ddd);
+  background-image: -ms-linear-gradient(#eee, #ddd);
+  background-image: linear-gradient(#eee, #ddd);
+  margin-top: -30px;
+  padding-top: 30px;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+#pricing-table .plan:nth-child(1) h3 {
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 0;
+}
+
+#pricing-table .plan:nth-child(4) h3 {
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+}
+
+#pricing-table h3 span {
+  display: block;
+  font: bold 25px/100px "Quicksand";
+  background: #fff;
+  border: 5px solid #fff;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto -65px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+  -webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+  box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+}
+
+
+/* --------------- */
+
+#pricing-table ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+#pricing-table li {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  font-family: Quicksand;
+}
+
+
+/* --------------- */
+
+#pricing-table .signup {
+  position: relative;
+  padding: 8px 20px;
+  margin: 20px 0 0 0;
+  color: #fff;
+  font: bold 12px Arial, Helvetica;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #2aada9;
+  background-image: -moz-linear-gradient(#2aada9, #98e6e4);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2aada9), to(#98e6e4));
+  background-image: -webkit-linear-gradient(#2aada9, #98e6e4);
+  background-image: -o-linear-gradient(#2aada9, #98e6e4);
+  background-image: -ms-linear-gradient(#2aada9, #98e6e4);
+  background-image: linear-gradient(#2aada9, #98e6e4);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+}
+
+#pricing-table .signup:hover {
+  background-color: #98e6e4;
+  background-image: -moz-linear-gradient(#98e6e4, #2aada9);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#98e6e4), to(#2aada9));
+  background-image: -webkit-linear-gradient(#98e6e4, #2aada9);
+  background-image: -o-linear-gradient(#98e6e4, #2aada9);
+  background-image: -ms-linear-gradient(#98e6e4, #2aada9);
+  background-image: linear-gradient(#98e6e4, #2aada9);
+}
+
+#pricing-table .signup:active,
+#pricing-table .signup:focus {
+  background: #98e6e4;
+  top: 2px;
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+}
+
+
+/* --------------- */
+
+.clear:before,
+.clear:after {
+  content: "";
+  display: table
+}
+
+.clear:after {
+  clear: both
+}
+
+.clear {
+  zoom: 1
+}
+
+.clear:before,
+.clear:after {
+  content: "";
+  display: table
+}
+
+.clear:after {
+  clear: both
+}
+
+.clear {
+  zoom: 1
+}
+
+.clear {
+  zoom: 1
+}
+
+.clear:before,
+.clear:after {
+  content: "";
+  display: table
+}
+
+.clear:after {
+  clear: both
+}
+
+.clear {
+  zoom: 1
+}
+
+
+/* FOOTER */
+
+.footer-main-div {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #2aada9;
+  padding: 20px 0px;
+}
+
+.footer-social-icons {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.footer-social-icons ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.footer-social-icons ul li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background: white;
+}
+
+.footer-social-icons ul li a {
+  color: #2aada9;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #000000;
+  padding: 10px 0px;
+  color: #2aada9;
+}
+
+
+/* FORM */
+
+form {
+  padding: 15px;
+  margin-top: 100px;
+}
+
+form div.row {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  color: white;
+}
+
+form label {
+  width: 30%;
+  text-align: end;
+  display: block;
+  float: left;
+  margin-right: -100px;
+}
+
+form input,
+form select {
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  margin-left: -80px;
+}
+
+form input[type="checkbox"] {
+  position: relative;
+  /* left: 30%; */
+  width: auto;
+}
+
+form span {
+  position: relative;
+  /* right: 30%; */
+  /* text-align: left; */
+}
+
+form input[type="submit"] {
+  width: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
